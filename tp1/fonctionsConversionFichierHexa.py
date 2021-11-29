@@ -131,13 +131,15 @@ def hexa_decode(fichier):
 
 start_time = time.time()
 
-chaineHexaVersFichier(hexa_code('Contenus numériques\Bees.mp4'), 'Contenus numériques\Bees_crypto.mp4')
-chaineHexaVersFichier(hexa_decode('Contenus numériques\Bees_crypto.mp4'), 'Contenus numériques\Bees_decrypt.mp4')
+chaineHexaVersFichier(hexa_code('Contenus numériques\Flaubert - Bouvard et Pecuchet.pdf'), 'Contenus numériques\Flaubert - Bouvard et Pecuchet_crypto.pdf')
+chaineHexaVersFichier(hexa_decode('Contenus numériques\Flaubert - Bouvard et Pecuchet_crypto.pdf'), 'Contenus numériques\Flaubert - Bouvard et Pecuchet_decrypt.pdf')
 
 print("--- %s seconds ---" % (time.time() - start_time))
 
 # Time for Flaubert_decrypt.txt : 2.859 seconds
 # Time for Radiographie crane_decrypt.png : 0.744 seconds
 # Time for Bees_decrypt.mp4 : 26.53 seconds
+# Time for Drops_of_H2O_decrypt.mp3 : 29.95 seconds
+# Time for Flaubert - Bouvard et Pecuchet_decrypt.pdf : 6.98 seconds
 
 # Le ciffrement de Vigenère n'est pas vraiment adapté au fichiers volumineux
